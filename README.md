@@ -11,7 +11,7 @@ git clone https://github.com/Joeclinton1/google-images-download.git cd google-im
 
 
 
-# panik-bot
+# panik-bot-2nd edition
 Discord bot created for my my friend's discord server using python- which allows for interactions between users, increasing publicity \
 Allows users to: \
 Play music\
