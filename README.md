@@ -1,3 +1,13 @@
+#Installations
+
+pip install discord.py[voice] pip install youtube_dl
+
+#to install google_images_download (download the feature branch with the fix)
+
+git clone https://github.com/Joeclinton1/google-images-download.git cd google-images-download && python setup.py install
+
+
+
 # panik-bot
 Discord bot created for my my friend's discord server using python \
 Allows users to: \
