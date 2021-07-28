@@ -3,7 +3,9 @@
 
 ## Install
 pip install discord.py[voice]  \
-pip install youtube_dl
+pip install youtube_dl \
+pip install requests 
+
 
 ## to install google_images_download (download the feature branch with the fix)
 
