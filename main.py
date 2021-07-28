@@ -2,12 +2,15 @@ import discord
 import random
 import os
 import asyncio
+import traceback
+import sys
 import json
 from discord import FFmpegPCMAudio
 from discord.utils import get
 from discord.ext import commands, tasks
 from music_cog import music_cog
 from image_cog import image_cog
+from memeimage_cog import memeimage_cog
 from itertools import cycle
 
 intents = discord.Intents.all()
@@ -15,8 +18,9 @@ intents = discord.Intents.all()
 client = commands.Bot(command_prefix = ".", intents = intents)
 client.add_cog(music_cog(client))
 client.add_cog(image_cog(client))
+client.add_cog(memeimage_cog(client))
 status = cycle(['twitch.tv/panikna','What do you call a cow with no legs? Ground Beef.', 'What do you call a cow in a tornado? A milk shake.', 'What do you call a bear with no teeth? A gummy bear'])
-
+  
 
 #start
 @client.event
@@ -42,6 +46,7 @@ class DurationConverter(commands.Converter):
       if amount.isdigit() and unit in ['s', 'm','h','d']:
         return(int(amount),unit)
       #musicplayer
+
 
 
 @client.command()
