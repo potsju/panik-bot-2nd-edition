@@ -20,6 +20,8 @@ Play music\
 Interact with the bot\
 Play 8 ball\
 Tell a joke\
+Find memes and display them \
+Generate images \
 Provide useful information \
 Update moderation \
 Provides tools for users \
